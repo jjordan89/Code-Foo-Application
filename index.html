@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />  
+<html>
+	<head>
+		<title>Code-Foo</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript">
+			//My JS code here
+			var letter_array = ["A", "B", "C", "D", "1", "2", "3"];
+			
+			$(document).ready( function(){
+				$("div.accordion>.content").hide();
+				
+				$("div.accordion>h3").click( function(){
+					$(this).next(".content").slideToggle( 700, "easeOutExpo" ).siblings(".content").slideUp();
+					$(this).toggleClass("selected").siblings("h3").removeClass("selected");
+				} );
+				$("button").click(function(){
+					var plate = "";
+					for ( var n = 0; n < 6; n ++ ) {
+						var i = Math.floor( Math.random() * letter_array.length );
+						plate += letter_array[i];
+					}
+					$("h1").html( plate );
+				});
+
+			} ); //End Document ready
+		
+		</script>
+	</head>
+	<body>
+	<!-- Header -->
+		<div id="header_wrapper">
+			<div id="header">
+				<div id="logo"><a href="#">IGN</a>
+				</div>
+				<div id="yt_icon"><a href="http://www.youtube.com/user/CoolNerdd">CoolNerdd/youtube.com</a></div>
+			</div>
+		</div>
+	<!-- Questions -->
+		<div id="accordion_wrapper">
+			<div class="accordion">
+				<h3>Question 1</h3>
+					<div class="content">
+						<p>If I wanted to fill a bus with ping-pong balls I would pour buckets of ping-pong balls into the bus until it fills. For example If I had 10 ping pong balls in each bucket and it took 15 buckets to fill the bus then it would have taken 150 balls to fill it.<br>
+							<br>
+	
+							If I where to take the mathematical approach to this I would take the detentions of the bus, which are: width 96in, height 120 in, length 480in, and the ball that is 1in. With the ball being one inch I would add all of the detentions of the bus together adding up to 696 inches, which would be the amount of balls to fill the bus 696 balls to fill the bus.
+						</p>
+					</div>
+					
+				<h3>Question 2</h3>
+					<div class="content">
+						<p>A liquid Layout can be used for people who have different browser size screens, so when the browser window is resized to fit their screen, information will not be cut off.
+						</p>
+					</div>
+					
+				<h3>Question 3</h3>
+					<div class="content">
+						<h1></h1>
+    					<button>Click</button>
+						<p>Random Plate Generator</p>
+					</div>
+					
+				<h3>Question 4</h3>
+					<div class="content">
+						
+						<p>Video About me</p>
+						<object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/A7THMBA8Ofs?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/A7THMBA8Ofs?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

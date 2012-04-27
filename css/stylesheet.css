@@ -1,0 +1,124 @@
+body {
+	background: #373737;
+	margin: 0;
+}
+
+/* Header */
+	#header {
+		background: #000;
+		background-repeat: repeat-x;
+		height: 80px;
+	}
+	
+	#header #logo {
+		background: url(../images/logo.png);
+		background-repeat: no-repeat
+		height:165px;
+		width: 376px;
+		float: left;
+		
+		}
+		
+		#logo a {
+			display: block;
+			text-indent: -99999px;
+			width: 376px;
+			height: 165px;
+		}
+		
+		#yt_icon {
+			background: url(../images/yt_icon.png);
+			background-repeat: no-repeat;
+			width: 52px;
+			height: 51px;
+			float: right;
+			margin-top: 15px;
+			margin-right: 30px;
+			
+		}
+		
+			#yt_icon a {
+				display: block;
+				text-indent: -999999px;
+				width: 52px;
+				height: 51px;
+			}
+		
+/* Questions */
+		
+	#accordion_wrapper {
+		width: 70%;
+		margin: auto;
+	}
+			
+	.accordion {
+		margin-top: 100px;
+		}
+
+		
+	div.accordion>h3 {
+		cursor: pointer;
+		background-color: rgba(0, 0, 0, 0.2);
+		font-family: Arial;
+		color: #FFF;
+		margin-bottom: 0;
+		margin-top: 0;
+		border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+		background-image: url(../images/PlusMinus.png);
+		background-repeat: no-repeat;
+		background-position: top left;
+		height: 30px;
+		padding-left: 30px;
+		line-height: 30px;
+		-webkit-transition: 400ms;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		-moz-transition: 400ms;
+		-moz-border-radius: 8px 8px 8px 8px;
+
+	}
+	
+	div.accordion>h3:hover {
+		
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	
+	div.accordion>h3.selected {
+		background-color: rgba(255, 0, 0, 0.8);
+		background-position: bottom left;
+		-webkit-border-radius: 8px 8px 0 0;
+		-moz-border-radius: 8px 8px 0 0;
+		color: #000;
+	}
+	
+	div.accordion>.content {
+		font-family: Arial;
+		background-color: #FFF;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 20px;
+		border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+		color: #000;
+		-webkit-border-radius: 0 0 8px 8px;
+		-moz-border-radius: 0 0 8px 8px;
+		margin: auto;
+	}
+	
+	div.accordion>.content>p {
+		line-height: 25px;
+	}
+	
+/* Question 3 */
+	
+	h1 {
+		background: url(../images/plate2.png);
+		background-repeat: no-repeat;
+		width: 551px;
+		height: 220px;
+		text-align: center;
+		padding-top: 125px;
+		margin-bottom: 0;
+		font-size:  90px;
+		font-family: Futura medium condensed, Arial;
+		margin: auto;
+	}
+	
